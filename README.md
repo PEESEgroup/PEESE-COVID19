@@ -1,4 +1,4 @@
-# Project Title
+# PEESE-COVID19: NY State COVID-19 Health Crisis Mapping project
 The project creates a dynamic map and trends dashboard webpage of NY state COVID-19 cases by county. 
 ![Preliminary Design]( https://github.com/PEESEgroup/PEESE-COVID19/blob/master/Capture.PNG
 )

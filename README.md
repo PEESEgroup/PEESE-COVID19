@@ -1,2 +1,2 @@
 # PEESE-COVID19
-NY COVID-19 Crisis Mapping project
+NY State COVID-19 Health Crisis Mapping project

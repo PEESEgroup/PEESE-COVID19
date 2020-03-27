@@ -19,8 +19,6 @@ A step by step examples that tell you how to get a development environment runni
 Give an example
 ```
 
-And repeat
-
 ## Deployment
 
 Add additional notes about how to deploy this on a live website

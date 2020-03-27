@@ -4,7 +4,6 @@ The project creates a dynamic map and trends dashboard webpage of NY state COVID
 )
 ## Files Description 
 
-ny cases by county.csv - 
 * [ny cases by county.csv](http://www.dropwizard.io/1.0.2/docs/) – Dataset (will be updated daily)
 * [ny cases by county-ls.csv](https://maven.apache.org/) – Dataset with log scale
 

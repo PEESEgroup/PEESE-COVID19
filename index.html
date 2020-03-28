@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+<script src="https://cdn.rawgit.com/mholt/PapaParse/2f1eb8c4/papaparse.min.js"></script>
+
+<!-- <script src="http://akshayajagekar.com/covid19-ny/core.js"></script>
+<script src="http://akshayajagekar.com/covid19-ny/charts.js"></script>
+<script src="http://akshayajagekar.com/covid19-ny/maps.js"></script>
+<script src="http://akshayajagekar.com/covid19-ny/papaparse.min.js"></script> -->
+<script src="https://www.amcharts.com/lib/4/geodata/region/usa/nyLow.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+
+
+
+<html>
+  <head>
+    <title>COVID-19 PEESE @Cornell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+      #rcorners2 {
+      margin-top:15%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 25px;
+      border: 2px solid rgb(7, 7, 7);
+      padding: 35px 0;
+      width: 90%;
+      height: 200px;
+      text-align: center;
+    }
+    #rcorners1 {
+      margin-top:2%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 25px;
+      border: 2px solid rgb(7, 7, 7);
+      padding: 10px 0;
+      width: 90%;
+      height: 140px;
+      text-align: center;
+    }
+    #header {
+    text-align: center;
+    background: white;
+    color: gray;
+    font-size: 30px;
+  }
+    </style>
+
+  </head>
+
+  <body>
+    
+  <div class="container-fluid">
+
+    <div class="row" style="height: 150px;">
+      <div class="col-xs-2 text-center">
+        <a href="https://www.peese.org/">
+        <img src="https://www.peese.org/wp-content/uploads/2018/01/logo-min-1.jpg" style="margin-top: 6px; " width="134" height="135" >
+        </a>
+        <!-- <p style="text-align: center; margin-top: -7%;"><br> -->
+        <!-- <a href="https://www.peese.org/"><font color="#3498DB" size=5>by the Process-Energy-Environmental Systems Engineeering (PEESE) Lab @ Cornell University</font>
+        </a> -->
+        </p>
+      </div>
+      <div class="col-xs-10 text-center" >
+        <p style="font-size:3.5vw; text-align: center; margin-top: 2%; margin-left: -10%;"><font color="grey" ><b>COVID-19 Cases in New York State</b></font></p>
+        
+      </div>
+    </div>
+
+    <div class="row" style="background-color:lightgray; height: 10px"></div>
+
+    <div class="row row-no-gutters">
+
+        <div id = "nymap" class="col-xs-6" style="height: 800px;"> </div>
+
+        <div class="col-xs-3">
+            <div class="row row-no-gutters">
+                <div class="col-xs-12 text-center" style="height: 150px; ">
+                  <p id="rcorners1">
+                    <font color="grey" size=5vw><b>New Cases in New York State</b></font>
+                    <br>
+                    <font size=3> <b>Last updated :</b> <span id="recentDate"></span></font>
+                    <br><br>
+                    <font size=6><span id="newCases"></span> | </font>  <font color="red" size=6>+<span id="increasePercent"></span>%</font>
+                    </p>
+                  
+                </div>
+
+                <div id="countywise2" class="col-xs-12" style="height: 150px; "> 
+                  <p id="rcorners1">
+                    <font color="grey" size=4><b>Current Cases in <span id="currentCounty"></span> </b></font>
+                    <br>
+                    <font size=3> <b>Last updated :</b> <span id="recentCountyDate"></span></font>
+                    <br><br>
+                    <font size=6><span id="recentCountyTotal"></span> | </font>  <font color="red" size=6>+<span id="newCountyCases"></span></font>
+                    </p>
+                </div>
+
+                <div id="countywise" class="col-xs-12" style="height: 400px;"> </div>
+              </div>
+            </div>
+        
+        <div class="col-xs-3" style="height: 400px;">
+            <div class="row row-no-gutters">
+                <div class="col-xs-12 text-center border" style="height: 300px;">
+                  <p id="rcorners2">
+                  <font color="grey" size=5><b>NYS Cumulative Total</b></font>
+                  <br>
+                  <font size=7><span id="recentTotal"></span></font>
+                  </p>
+                </div>
+
+                <div id="cumulativetotal" class="col-xs-12" style="background-color:lightcyan; height: 400px;"> </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-no-gutters">
+
+          <div id = "trendCounty" class="col-xs-12 border border-secondary" style="height: 600px;"> </div>
+          <!-- <div id = "trends" class="col-xs-6" style="height: 600px; background-color: green;"> </div> -->
+        </div>
+    </div>
+
+    
+    <script src="covid5.js"></script>
+  </body>
+
+</html>

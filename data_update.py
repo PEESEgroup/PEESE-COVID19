@@ -128,7 +128,7 @@ def update_data():
     os.remove("ny cases by county.csv")
     os.rename("test2.csv", "ny cases by county.csv")
 
-# update only if not previouslt updated
+# update only if not previously updated
 if recent_updated_date != recent_date:
     update_data()
     fp = open("Last updated.txt", "w+")

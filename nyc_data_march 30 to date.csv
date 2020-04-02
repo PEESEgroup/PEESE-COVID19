@@ -1,21 +1,21 @@
 ﻿Date,30-Mar-20,31-Mar-20,1-Apr-20
-total confirmed cases,38087,41771,
-median age,48,48,
-age_0 to 17,714,757,
-age_18 to 44,16028,17347,
-age_45 to 64,13344,14689,
-age_65 to 74,4496,5015,
-age_75 and over,3410,3866,
-age_unkown,95,97,
-age_over 50,17958,19973,
-age_under 50,20034,21701,
-sex_female,16920,18677,
-sex_male,21120,23043,
-sex_unkown,47,51,
-borough_Bronx,6925,7814,
-borough_Brooklyn,10171,11160,
-borough_Manhattan,6060,6539,
-borough_Queens,12756,13869,
-borough_Staten Island,2140,2354,
-borough_unknown,35,35,
-Deaths,914,1096,
+total confirmed cases,38087,41771,45707
+median age,48,48,49
+age_0 to 17,714,757,816
+age_18 to 44,16028,17347,18767
+age_45 to 64,13344,14689,16104
+age_65 to 74,4496,5015,5584
+age_75 and over,3410,3866,4328
+age_unkown,95,97,108
+age_over 50,17958,19973,22061
+age_under 50,20034,21701,23538
+sex_female,16920,18677,20522
+sex_male,21120,23043,25128
+sex_unkown,47,51,57
+borough_Bronx,6925,7814,8607
+borough_Brooklyn,10171,11160,12274
+borough_Manhattan,6060,6539,7022
+borough_Queens,12756,13869,15217
+borough_Staten Island,2140,2354,2552
+borough_unknown,35,35,35
+Deaths,914,1096,1374

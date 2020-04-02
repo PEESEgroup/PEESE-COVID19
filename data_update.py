@@ -5,7 +5,9 @@ import csv
 import datetime
 import math
 import os
+import pip
 
+# pip install C:\Users\shreyaaa\Downloads\lxml-4.5.0-cp38-cp38-win32 (3).whl
 # Scrape date
 def get_page():
     url = "https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases"

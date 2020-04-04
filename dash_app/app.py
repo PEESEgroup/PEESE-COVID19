@@ -5,49 +5,12 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-external_scripts = ['https://raw.githubusercontent.com/nz225/ning-lib/master/Map_NYS/assets/java_2.js', 'https://www.statcounter.com/counter/counter.js']
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, external_scripts=external_scripts)
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = "COVID-19 in New York State - Interactive Map by PEESE @ Cornell Univerisity"
-
-# app.scripts.append_script = html.Script(src='https://www.statcounter.com/counter/counter.js',type='text/javascript')
 server = app.server
 
 ###################################################################################
 ###################################################################################
-
-
-# app.scripts.append_script(html.Script(['var sc_project=12226718; ','var sc_invisible=1; ','var sc_security="2df363f3"; '],type='text/javascript'))
-# app.scripts.append_script(html.Script(['var sc_project=12226718; ','var sc_invisible=1; ','var sc_security="2df363f3"; '],type='text/javascript'))
-
-'''
-app.scripts.append_script({
-    'external_url':'https://raw.githubusercontent.com/nz225/ning-lib/master/Map_NYS/assets/java_1.js'
-    })
-app.scripts.append_script({
-    'external_url':'https://www.statcounter.com/counter/counter.js'
-    })
-'''
-
-
-
-# add other codes before the callback section
-# https://community.plotly.com/t/append-script-when-dash-components-are-loaded/8023/4
-# import grasia_dash_components as gdc
-
-from base64 import urlsafe_b64encode
-def write_to_data_uri(s):
-    """
-    Writes to a uri.
-    Use this function to embed javascript into the dash app.
-    Adapted from the suggestion by user 'mccalluc' found here:
-    https://community.plotly.com/t/problem-of-linking-local-javascript-file/6955/2
-    """
-    uri = (
-        ('data:;base64,').encode('utf8') +
-        urlsafe_b64encode(s.encode('utf8'))
-    ).decode("utf-8", "strict")
-    return uri
 
 
 from urllib.request import urlopen
@@ -902,27 +865,8 @@ app.layout = html.Div(children=[
 
     ]),
 
-    html.Script(['var sc_project=12231169;','var sc_invisible=1;','var sc_security="3feb63be";','var sc_https=1;'],type='text/javascript'),
-    html.Script(src='https://www.statcounter.com/counter/counter.js',type='text/javascript'),
-
 ])
 
-
-
-# app.scripts.append_script(html.Script(['var sc_project=12226718; ','var sc_invisible=1; ','var sc_security="2df363f3"; '],type='text/javascript'))
-
-
-app.scripts.append_script({
-    'external_url': write_to_data_uri("""
-    var sc_project=12231169; 
-    var sc_invisible=1; 
-    var sc_security="3feb63be"; 
-    var sc_https=1; 
-    """)})
-
-app.scripts.append_script({
-    'external_url': 'https://www.statcounter.com/counter/counter.js'
-    })
 
 
 

@@ -1,15 +1,16 @@
-# PEESE-COVID19: NY State COVID-19 Health Crisis Mapping project
+# PEESE-COVID19: New York State COVID-19 Health Crisis Mapping project
 The project creates a dynamic map and trends dashboard webpage of NY state COVID-19 cases by county. 
 ![Preliminary Design]( https://github.com/PEESEgroup/PEESE-COVID19/blob/master/Capture.PNG
 )
+
+### Project URL
+
+http://engineering.cornell.edu/covid-19map
+
 ## Files Description 
 
 * [ny cases by county.csv](https://github.com/PEESEgroup/PEESE-COVID19/blob/master/ny%20cases%20by%20county.csv) – Dataset (will be updated daily)
 * [ny cases by county-ls.csv](https://github.com/PEESEgroup/PEESE-COVID19/blob/master/ny%20cases%20by%20county%20-%20ls.csv) – Dataset with log scale
-
-### Prerequisites
-
-What things you need to install the software and how to install them
 
 ### Installing
 

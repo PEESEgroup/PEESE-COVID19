@@ -7,6 +7,8 @@ The project creates a dynamic map and trends dashboard webpage of NY state COVID
 
 http://engineering.cornell.edu/covid-19map
 
+http://www.coronavirus.peese.org/
+
 ## Files Description 
 
 * [ny cases by county.csv](https://github.com/PEESEgroup/PEESE-COVID19/blob/master/ny%20cases%20by%20county.csv) – Dataset (will be updated daily)

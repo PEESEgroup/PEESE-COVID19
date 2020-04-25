@@ -7,7 +7,7 @@ The project creates a dynamic map and trends dashboard webpage of NY state COVID
 
 http://engineering.cornell.edu/covid-19map
 
-http://covid19.cbe.cornell.edu/
+http://www.coronavirus.peese.org/
 
 ## Files Description 
 

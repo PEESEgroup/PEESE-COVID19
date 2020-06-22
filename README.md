@@ -14,18 +14,6 @@ http://covid19.cbe.cornell.edu/
 * [ny cases by county.csv](https://github.com/PEESEgroup/PEESE-COVID19/blob/master/ny%20cases%20by%20county.csv) – Dataset (will be updated daily)
 * [ny cases by county-ls.csv](https://github.com/PEESEgroup/PEESE-COVID19/blob/master/ny%20cases%20by%20county%20-%20ls.csv) – Dataset with log scale
 
-### Installing
-
-A step by step examples that tell you how to get a development environment running
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live website
-
 ## Data Sources
 
 * [NY Department of Health]( https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases) 
